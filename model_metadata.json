@@ -1,0 +1,40 @@
+{
+    "project": "TrafficIQ",
+    "model_type": "RandomForestRegressor",
+    "n_estimators": 120,
+    "max_depth": 14,
+    "random_seed": 42,
+    "training_samples": 4800,
+    "testing_samples": 1200,
+    "mae": 21.716632735583975,
+    "mse": 732.4385192898662,
+    "rmse": 27.063601373244218,
+    "r2_score": 0.9944991018371772,
+    "target_variable": "traffic_demand",
+    "features": [
+        "road",
+        "vehicle_count",
+        "traffic_density",
+        "queue_length",
+        "avg_speed",
+        "hour_of_day",
+        "day_of_week",
+        "is_weekend",
+        "prev_waiting_time"
+    ],
+    "feature_importances": {
+        "vehicle_count": 0.9916683929758933,
+        "traffic_density": 0.0026979068309918117,
+        "queue_length": 0.002057755216170593,
+        "avg_speed": 0.0018534757542012993,
+        "prev_waiting_time": 0.0007825901134044899,
+        "hour_of_day": 0.0003497194845720314,
+        "day_of_week": 0.00028004464494543383,
+        "road_West": 7.312478037231775e-05,
+        "road_South": 7.072906012142419e-05,
+        "road_East": 6.879711684609573e-05,
+        "road_North": 6.47478061285988e-05,
+        "is_weekend": 3.271621635244351e-05
+    },
+    "training_timestamp": "2026-10-27T14:00:19.745578"
+}
